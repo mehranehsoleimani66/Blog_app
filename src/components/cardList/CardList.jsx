@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CardList.module.css";
-import Pagination from "@/pagination/Pagination";
+import Pagination from "@/components/pagination/Pagination";
 const CardList = () => {
   return (
     <div className={styles.container}>
