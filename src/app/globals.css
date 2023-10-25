@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 100vw;
+  max-width: 100wv;
   overflow-x: hidden;
 }
 a {
@@ -30,10 +30,10 @@ a {
   --softTextColor: #626262;
 }
 .container {
-  max-height: 100vh;
+  min-height: 100vh;
   background: var(--bg);
   color: var(--textColor);
-  height: 100vh;
+  /* height: 100vh; */
 }
 .wrapper {
   max-width: 1534px;
