@@ -1,11 +1,12 @@
 "use client";
-import { useSession, signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import styles from "./login.module.css";
 import { useRouter } from "next/navigation";
 
-const LogIn = () => {
-  const { status } = useSession();
-
+const LoginPage = () => {
+  const { data, status } = useSession();
+  console.log(data);
+  console.log(status);
   const router = useRouter();
 
   if (status === "loading") {
@@ -19,14 +20,22 @@ const LogIn = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.social} onClick={() => signIn("google")}>
+        <div
+          className={styles.social}
+          onClick={async () => await signIn("google")}
+        >
           Sign in with Google
         </div>
-        <div className={styles.social}>log in with Git Hub</div>
-        <div className={styles.social}>log in with LinkedIn</div>
+        <div
+          className={styles.social}
+          onClick={async () => await signIn("github")}
+        >
+          Sign in with Github
+        </div>
+        <div className={styles.social}>Sign in with Facebook</div>
       </div>
     </div>
   );
 };
 
-export default LogIn;
+export default LoginPage;
