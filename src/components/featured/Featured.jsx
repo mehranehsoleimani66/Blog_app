@@ -5,22 +5,23 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b className={styles.bold}>Hey, lama dev here!</b> Discover my stories
-        and creative ideas.
+        <b>Hey, Mehii is here!</b> Discover my stories and creative ideas.
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <Image src="/images.jfif" alt="" fill className={styles.image} />
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet alim consectetur adipisicing elit.
+            What is the best way to motivate yourself?
           </h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate, quam nisi magni ea laborum inventore voluptatum
-            laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
-            quisquam! Harum unde sit culpa debitis.
+            If you’re feeling the summer doldrums right now, you’re not alone.
+            And yet, deadlines don’t stop just because it’s summer. The more
+            senior a leader you are, the more you have to motivate yourself. As
+            an executive coach, I’ve worked with many clients on how to ignite
+            their motivation over the years. Try these strategies if you need to
+            give yourself a jolt.
           </p>
           <button className={styles.button}>Read More</button>
         </div>
